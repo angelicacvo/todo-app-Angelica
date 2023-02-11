@@ -1,0 +1,10 @@
+<h1>ToDo APP</h1>
+<div class="tasks-list">
+  <app-add-task (onAgregar)="agregarTask($event)">
+  </app-add-task>
+  <app-task
+    *ngFor="let task of tasksList; let i = index"
+    [texto]="task"
+    (onEliminar)="eliminarTask(i)"
+  ></app-task>
+</div>
