@@ -4,6 +4,7 @@
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin-bottom: 15px;
+  background-color: rgb(33, 63, 38);
 }
 
 .tachado {
@@ -25,10 +26,9 @@
 
 button {
   padding: 5px 10px;
-  border: 1px solid red;
-  background: none;
+  background-color: black;
   height: fit-content;
   border-radius: 10px;
-  color: red;
+  color: white;
   cursor: pointer;
 }

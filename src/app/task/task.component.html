@@ -4,6 +4,6 @@
     <input type="checkbox" name="tarea-completada" id="tarea-completada" [(ngModel)]="isTareaCompletada"
       (change)="toggleTareaCompletada()" />
     <p [ngClass]="{ tachado: isTareaCompletada }">{{ texto }}</p>
-    <button (click)="eliminar()">Eliminar</button>
+    <button class="btn btn-secondary" (click)="eliminar()">Eliminar</button>
   </div>
 </div>

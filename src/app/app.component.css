@@ -1,3 +1,11 @@
+.todo-container{
+  margin: 5%;
+  padding: 1%;
+  background-image: url(https://images.alphacoders.com/546/thumb-1920-546091.jpg);
+  background-size: cover;
+  border-radius: 1%;
+}
+
 h1 {
   text-align: center;
 }
