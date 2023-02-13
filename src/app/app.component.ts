@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,17 +8,16 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'todo-app';
 
-  newTasks: string = '';
   tasksList: string[] = ['texto tarea 1', 'texto tarea 2', 'texto tarea 3'];
 
   eliminarTask(taskIndex: number) {
     this.tasksList.splice(taskIndex, 1);
   }
 
-  agregarTask(event: Event) {
-    const Element = event.target as HTMLInputElement;
-    this.tasksList.push(this.newTasks);
-    console.log(this.newTasks)
+  agregarTask(newTasks: string) {
+    // const Element = event.target as HTMLInputElement;
+    this.tasksList.push(newTasks);
+    console.log(this.tasksList);
   }
 
 }
